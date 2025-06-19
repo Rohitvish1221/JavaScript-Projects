@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    max-width: 35rem;
+    background-color: #ffff;
+    padding: 30px 40px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.container::after {
+    content: "";
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+input {
+    margin-top: 10;
+    border: 0.5 #bbb;
+    border-radius: 5px;
+    background-color: #f4e7e7;
+    width: 79%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+input::after {
+    content: "";
+}
+
+#inputContainer button {
+    margin: 0 4px;
+    cursor: pointer;
+    border: 0.5 #bbb;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 18%;
+    background-color: #f7d0d0;
+    transition: all linear 0.3s;
+}
+
+.addContainer > button:active{
+    scale: 0.9;
+}
+
+/* Remove margins and padding from the list */
+#listContainer {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#listContainer .list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+/* Style the list items */
+#listContainer p {
+    width: 90%;
+    cursor: pointer;
+    padding: 12px;
+    background: aliceblue;
+    font-size: 18px;
+    transition: 0.2s;
+    margin: 0px 0px;
+}
+
+#listContainer p:hover {
+    background: #ddd;
+}
+
+#listContainer button { 
+    padding: 5px 8px;
+}
