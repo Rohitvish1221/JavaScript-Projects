@@ -25,8 +25,17 @@ function renderList(arr){
 }
 renderList(list);
 
+//Add list by pressing key
+addInp.addEventListener('keydown',function(e){
+    if(e.key==="Enter"){
+        e.preventDefault();
+        addBtn.click();
+    }
+})
+
 //Add button functionalities
-function addList(){
+function addList(event){
+
     if(addInp.value == ""){
         alert("Add Task First")
     }
@@ -42,7 +51,7 @@ function addList(){
     
 }
 
-//Add delete button functionality
+//Delete button functionality
 function removeList(id){
     console.log(id);
     let filterList = list.filter(obj=>{
