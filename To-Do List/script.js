@@ -45,6 +45,7 @@ function addList(event){
         text: addInp.value
     }
     list.push(obj);
+    console.log(obj)
     addInp.value = "";
     renderList(list);
     }
