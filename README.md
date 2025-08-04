@@ -1,2 +1,2 @@
 # JavaScript-Projects
-Here I will create Simple JavaScript Projects
+Here I have created Simple JavaScript Projects.
